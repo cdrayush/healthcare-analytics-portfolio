@@ -18,9 +18,11 @@
 */
 
 
-const API_URL =
+/*const API_URL =
     "https://newsapi.org/v2/everything";
+*/
 
+const API_URL = "/api/news";
 
 /* =========================================================
    2. DOM ELEMENTS
@@ -171,7 +173,7 @@ async function fetchHealthcareNews() {
 
     }
 
-
+/*
     try {
 
         const url =
@@ -200,7 +202,31 @@ async function fetchHealthcareNews() {
             "NewsAPI response:",
             data
         );
+*/
 
+try {
+
+    const url =
+        `${API_URL}?` +
+        `q=${encodeURIComponent(HEALTHCARE_QUERY)}` +
+        `&language=en` +
+        `&sortBy=publishedAt` +
+        `&pageSize=100`;
+
+    console.log(
+        "Fetching healthcare news..."
+    );
+
+    const response =
+        await fetch(url);
+
+    const data =
+        await response.json();
+
+    console.log(
+        "NewsAPI response:",
+        data
+    );
 
         /* =================================================
            API ERROR
