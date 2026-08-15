@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Healthcare News</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <div class="main-nav container flex">
+
+            <a href="#" class="company-logo">
+
+                <img
+                    src="./assets/Healthcare_Logo.png"
+                    alt="Healthcare News"
+                >
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <ul class="flex">
+
+                    <li class="hover-link nav-item active">
+                        <a href="#" data-category="all">
+                            All
+                        </a>
+                    </li>
+
+                    <li class="hover-link nav-item">
+                        <a href="#" data-category="healthcare">
+                            Healthcare
+                        </a>
+                    </li>
+
+                    <li class="hover-link nav-item">
+                        <a href="#" data-category="business">
+                            Health Business
+                        </a>
+                    </li>
+
+                    <li class="hover-link nav-item">
+                        <a href="#" data-category="it">
+                            Health IT
+                        </a>
+                    </li>
+
+                    <li class="hover-link nav-item">
+                        <a href="#" data-category="medtech">
+                            MedTech
+                        </a>
+                    </li>
+
+                    <li class="hover-link nav-item">
+                        <a href="#" data-category="pharma">
+                            Pharma
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-bar flex">
+
+                <input
+                    type="text"
+                    class="news-input"
+                    placeholder="Search healthcare news..."
+                >
+
+                <button class="search-button">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+        <div class="container">
+
+            <!-- PAGE INTRO -->
+
+            <section class="page-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        HEALTHCARE INTELLIGENCE
+                    </span>
+
+                    <h1>
+                        Healthcare News
+                    </h1>
+
+                    <p>
+                        Latest developments across healthcare,
+                        technology, business and medicine.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESULTS -->
+
+            <div class="results-bar">
+
+                <span id="results-count">
+                    Loading articles...
+                </span>
+
+            </div>
+
+
+            <!-- NEWS GRID -->
+
+            <div
+                class="cards-container"
+                id="cards-container"
+            >
+
+                <!-- JavaScript inserts cards here -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         NEWS CARD TEMPLATE
+    ========================== -->
+
+    <template id="template-news-card">
+
+        <article class="card">
+
+            <div class="card-image-container">
+
+                <img
+                    class="news-img"
+                    src=""
+                    alt="Healthcare news"
+                >
+
+            </div>
+
+
+            <div class="card-content">
+
+                <div class="news-category">
+                    Healthcare
+                </div>
+
+
+                <h3 class="news-title">
+                    News headline
+                </h3>
+
+
+                <div class="news-source">
+                    Source · Date
+                </div>
+
+
+                <p class="news-desc">
+                    News description
+                </p>
+
+
+                <a
+                    class="read-more"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read Article
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+    </template>
+
+
+    <script src="config.js"></script>
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
