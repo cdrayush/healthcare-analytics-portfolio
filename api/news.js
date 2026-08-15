@@ -15,7 +15,7 @@ export default async function handler(req, res) {
             `https://newsapi.org/v2/everything?${params.toString()}`,
             {
                 headers: {
-                    "X-Api-Key": process.env.NEWS_API_KEY
+                    "X-Api-Key": process.env.API_KEY
                 }
             }
         );
