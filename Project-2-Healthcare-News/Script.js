@@ -159,7 +159,7 @@ async function fetchHealthcareNews() {
 
 
     /* Check API key */
-
+/*
     if (
         !API_KEY ||
         API_KEY === "YOUR_NEWSAPI_KEY_HERE"
@@ -171,7 +171,7 @@ async function fetchHealthcareNews() {
 
         return;
 
-    }
+    }*/
 
 /*
     try {
